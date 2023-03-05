@@ -1,0 +1,56 @@
+body {
+    font-size: 16px;
+    display: grid;
+    /* min-height: 100vh; */
+    /* align-items: center; */
+    justify-items: center;
+}
+h1, h2, h3, h4 {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+#banner {
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(6, 7em);
+    border-left: 2px solid black;
+}
+.plank {
+    height: 2em;
+    padding: 0 1em;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    text-justify: center;
+}
+.phenomenal-plank {
+    grid-column: 1 / span 3;
+}
+.right-plank {
+    grid-column: 4 / span 3;
+    grid-row: 1;
+}
+.left-plank {
+    grid-column: 3 / span 3;
+    grid-row: 2;
+    text-align: center;
+}
+.floors-plank {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    text-align: center;
+}
+.bottem-left-plank {
+    grid-column: 1;
+}
+.bottem-right-plank {
+    grid-column: 2 / span 3;
+    text-align: end;
+}
+.empty {
+    grid-row: 4;
+    border: none;
+}
