@@ -100,6 +100,8 @@ p {
   width: 60%;
   margin: auto;
   text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 /* portfolio grid */
@@ -134,11 +136,11 @@ p {
 .resize {
   width: 300px;
   border-radius: 100%;
+  border: .5em solid #4e463c;
 }
 
 /* Text effects */
 
 .highlight {
   color: #e3ac6d;
-  text-decoration: underline;
 }
