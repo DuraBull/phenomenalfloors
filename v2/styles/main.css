@@ -5,6 +5,7 @@ body {
   background-color: black;
   color: white;
   height: 100vh;
+  width: 100%;
   margin: 0;
 }
 #background {
@@ -22,48 +23,58 @@ body {
   z-index: -1;
 }
 #banner {
-    margin-top: 1em;
-    display: grid;
+  margin-top: 1em;
+  display: grid;
 }
-.phenomenal, .floors, .mission {
-    text-shadow: 0px -10px 20px black;
-    box-shadow: 7px 10px 20px 4px black;;
+.phenomenal,
+.floors,
+.mission {
+  text-shadow: 0px -10px 20px black;
+  box-shadow: 7px 10px 20px 4px black;
 }
 .phenomenal {
-    width: 40%;
-    min-width: 29em;
+  width: 40%;
+  min-width: 29em;
 }
 .phenomenal h1 {
-    margin: 0;
-    padding-left: 2em;
+  margin: 0;
+  padding-left: 2em;
 }
 .floors {
-    width: 35%;
-    min-width: 27em;
-    margin: 0;
+  width: 35%;
+  min-width: 27em;
+  margin: 0;
 }
 .floors h1 {
-    margin: 0;
-    padding-left: 5.5em;
+  margin: 0;
+  padding-left: 5.5em;
 }
 .mission {
-    width: 30%;
-    min-width: 25em;
+  width: 30%;
+  min-width: 25em;
 }
 .mission h4 {
-    margin: 0;
-    padding: .5em 1em .5em;
+  margin: 0;
+  padding: 0.5em 1em 0.5em;
 }
 
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 70em) {
+  body {
+    font-size: 1em;
+  }
+  .phenomenal,
+  .floors,
+  .mission {
+    box-shadow: 7px 10px 20px 2px black;
+  }
+}
+
+@media screen and (max-width: 50em) {
     body {
-        font-size: 1em;
-    }
-    .phenomenal, .floors, .mission {
-        box-shadow: 7px 10px 20px 2px black;
+        justify-content: center;
     }
 }
