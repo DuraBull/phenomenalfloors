@@ -8,6 +8,9 @@ body {
   width: 100%;
   margin: 0;
 }
+header {
+  width: 100%;
+}
 #background {
   position: absolute;
   content: " ";
@@ -24,7 +27,6 @@ body {
 }
 #banner {
   margin-top: 1em;
-  display: grid;
 }
 .phenomenal,
 .floors,
@@ -74,8 +76,12 @@ body {
 }
 
 @media screen and (max-width: 50em) {
-    body {
-        width: 100%;
-        justify-content: center;
-    }
+  body {
+    justify-content: center;
+  }
+  .phenomenal,
+  .floors,
+  .mission {
+    min-width: 20em;
+  }
 }
