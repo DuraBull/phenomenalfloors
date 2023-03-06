@@ -75,13 +75,23 @@ header {
   }
 }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 30em) {
   body {
     justify-content: center;
   }
   .phenomenal,
   .floors,
   .mission {
-    min-width: 20em;
+    box-shadow: 7px 10px 20px 1px black;
+    min-width: 100%;
+  }
+  .phenomenal h1 {
+    padding-left: .5em;
+  }
+  .floors h1 {
+    padding-left: 4em;
+  }
+  .mission h4 {
+    padding-left: .5em;
   }
 }
