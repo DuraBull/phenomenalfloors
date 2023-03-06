@@ -79,6 +79,9 @@ header {
   body {
     justify-content: center;
   }
+  #background {
+    min-height: 700px;
+  }
   .phenomenal,
   .floors,
   .mission {
