@@ -1,0 +1,74 @@
+body {
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 400;
+    font-size: 16px;
+    display: grid;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+nav {
+    grid-column: 3;
+    justify-self: start;
+    word-spacing: 1em;
+}
+#background-image {
+    position: absolute;
+    background-image: url("../images/floor-light.jpg");
+    background-size: cover;
+    top: 0;
+    left: 0;
+    opacity: .6;
+    z-index: -1;
+    width: 100%;
+    height: 300px;
+}
+.title {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: left;
+}
+.phenomenal  {
+    margin: .5em 0 0;
+    grid-column: 1 / span 3;
+}
+.floors {
+    width: 100%;
+    grid-row: 2;
+    margin: 0;
+    grid-column: 1 / span 4;
+    text-align: center;
+}
+.mission {
+    grid-row: 3;
+    grid-column: 1 / span 5;
+    margin: 0 0 1em;
+    padding: .6em 1em; 
+}
+
+.box-shadow {
+    box-shadow: 1px 10px 20px 4px black;
+}
+
+@media screen and (max-width: 1105px) {
+    nav {
+        word-spacing: .5em;
+    }
+}
+@media screen and (max-width: 1010px) {
+    nav {
+        word-spacing: .2em;
+    }
+}
+@media screen and (max-width: 950px) {
+    nav {
+        display: none;
+    }
+    
+}
