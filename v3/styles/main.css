@@ -27,6 +27,21 @@ main {
     padding-top: 6em;
     grid-template-columns: repeat(8, 1fr);
 }
+.contact {
+    align-self: center;
+    display: grid;
+}
+.contact h1 {
+    margin: 0;
+}
+.phone {
+    display: inline;
+    justify-self: center;
+}
+.phone p {
+    padding: 0;
+    margin: 0;
+}
 .phenomenal {
     justify-self: center;
     grid-column: 1;
