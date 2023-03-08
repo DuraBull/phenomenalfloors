@@ -75,7 +75,7 @@ main {
 */
 @media screen and (max-width: 30em) {
     main {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         text-align: center;
     }
