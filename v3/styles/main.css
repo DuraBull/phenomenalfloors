@@ -19,7 +19,7 @@ header {
   background-color: white;
 }
 footer {
-  position: fixed;
+  position: relative;
   left: 0vh;
   bottom: 0vh;
   height: 4em;
@@ -41,7 +41,6 @@ main {
   z-index: 0;
   display: grid;
   padding-top: 6em;
-  padding-bottom: 5em;
   grid-template-columns: repeat(8, 1fr);
 }
 img {
@@ -150,6 +149,10 @@ img {
   main {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
+    padding-bottom: 4em;
+  }
+  footer {
+    position: fixed;
   }
   .img-left {
     text-align: center;
