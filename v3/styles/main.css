@@ -73,6 +73,7 @@ main {
 .article {
     grid-column: 3 / span 4;
     justify-self: center;
+    line-height: 1.5rem;
 }
 /* .what {
     display: flex;
