@@ -26,7 +26,7 @@ main {
     z-index: 0;
     display: grid;
     padding-top: 6em;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(8, 1fr);
 }
 .phenomenal {
     justify-self: center;
@@ -44,19 +44,25 @@ main {
     height: 2em;
     border: 1px solid black;
 }
+.section {
+    grid-column: 2 / span 7;
+}
+.section.title {
+    grid-column: 3 / span 6;
+}
 .article {
-    padding: 0 1em;
+    grid-column: 3 / span 4;
     justify-self: center;
 }
-.what {
+/* .what {
     display: flex;
     grid-column: 2 / span 2;
     flex-wrap: wrap;
-}
-.content-what {
+} */
+/* .content-what {
     text-align: left;
     grid-column: 1 / span 3;
-}
+} */
 .box-shadow {
     box-shadow: 0px 2px 20px 4px black;
 }
@@ -68,6 +74,11 @@ main {
 }
 */
 @media screen and (max-width: 30em) {
+    main {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+    }
     .nav-fs {
         display: none;
     }
@@ -75,10 +86,11 @@ main {
         display: inline;
     }
     .section {
-        grid-column: 1 / span 3;
+        grid-column: 1 / span 2;
         justify-content: center;
     }
     .article {
+        grid-column: 1 / span 2;
         text-align: center;
     }
 }
