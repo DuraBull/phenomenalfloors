@@ -52,9 +52,6 @@ img {
 
 /* Navigation */
 
-ul {
-  padding: 0;
-}
 .navigation {
   display: flex;
 }
@@ -86,6 +83,7 @@ ul {
 .menu {
   display: flex;
   list-style: none;
+  padding: 0;
 }
 .menu li {
   padding: 0 1em;
