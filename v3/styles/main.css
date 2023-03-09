@@ -62,6 +62,9 @@ img {
   aspect-ratio: 1;
   background: linear-gradient(#000 50%, #0000 0) 0 0/100% 40%;
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
   box-sizing: border-box;
 }
 .input-nav:checked {
