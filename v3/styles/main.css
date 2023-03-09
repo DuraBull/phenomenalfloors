@@ -210,7 +210,7 @@ img {
 }
 @media screen and (max-width: 32em) {
   main {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     justify-content: center;
     padding-bottom: 4em;
   }
