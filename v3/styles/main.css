@@ -46,23 +46,59 @@ main {
 img {
   max-width: 300px;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
+
+/* Navigation */
+
+ul {
+  padding: 0;
+}
+.navigation {
+  display: flex;
+}
+.input-nav {
+  display: none;
+  align-self: center;
+  width: 2em;
+  aspect-ratio: 1;
+  background: linear-gradient(#000 50%, #0000 0) 0 0/100% 40%;
+  appearance: none;
+  box-sizing: border-box;
+}
+.input-nav:checked {
+  align-self: center;
+  width: 2em;
+  aspect-ratio: 1;
+  background: conic-gradient(from 90deg at 32% 32%, #0000 90deg, #000 0) 106%
+    106%/60% 60%;
+  transform: translateZ(0px) rotate(45deg);
+}
+.close {
+  align-self: center;
+  width: 2em;
+  aspect-ratio: 1;
+  background: conic-gradient(from 90deg at 32% 32%, #0000 90deg, #000 0) 100%
+    100%/60% 60%;
+  transform: translateZ(0px) rotate(45deg);
+}
+.menu {
+  display: flex;
+  list-style: none;
+}
+.menu li {
+  padding: 0 1em;
+}
+
+/*  */
+
+
+
 .contact-icons {
   display: flex;
   justify-self: space-between;
   letter-spacing: 10px;
-}
-.bur-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-evenly;
-  height: 100%;
-
-}
-.bur-container hr {
-    margin: 0;
-    width: 80%;
 }
 .contact {
   align-self: center;
@@ -117,7 +153,7 @@ img {
 .row-5 {
   grid-row: 5;
 }
-.row-3{
+.row-3 {
   grid-row: 3;
 }
 .row-4 {
@@ -141,15 +177,7 @@ img {
   justify-self: center;
   line-height: 1.5rem;
 }
-/* .what {
-    display: flex;
-    grid-column: 2 / span 2;
-    flex-wrap: wrap;
-} */
-/* .content-what {
-    text-align: left;
-    grid-column: 1 / span 3;
-} */
+
 .box-shadow {
   box-shadow: 0px 2px 20px 1px black;
 }
@@ -160,7 +188,7 @@ img {
     }
 }
 */
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 32em) {
   main {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
@@ -169,6 +197,32 @@ img {
   footer {
     position: fixed;
   }
+
+  /* navigation */
+
+  .menu {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 4em;
+    height: 100vh;
+    width: 80%;
+    padding: 1em;
+    background: black;
+    color: white;
+    flex-direction: column;
+    align-items: center;;
+    justify-items: center;
+    gap: 1em;
+  }
+  .input-nav {
+    display: grid;
+    z-index: 2;
+  }
+  .input-nav:checked + .menu {
+    display: flex;
+  }
+
   .img-left {
     text-align: center;
     padding: 0;
