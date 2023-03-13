@@ -13,7 +13,7 @@ body {
     box-shadow: 0px 2px 20px 4px black;
 }
 .hero {
-    background-image: url("../images/hero.jpg");
+    background-image: url("../images/hero-lg.jpg");
     background-size: auto;
     background-repeat: norepeat;
     background-position: 25% 90%;
@@ -32,6 +32,6 @@ body {
 @media screen and (max-width: 30em) {
     .hero {
         background-size: auto;
-        background-position: 35% 85%;
+        background-position: 30% 90%;
     }
 }
