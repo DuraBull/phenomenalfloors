@@ -37,17 +37,19 @@ p {
   text-shadow: 1px 1px 3px black;
 }
 
-.chris {
+.home {
   background-image: linear-gradient(
-      to right,
+      to bottom,
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 0)
     ),
-    url("../images/chris.jpg");
-  background-size: 100%;
+    url("../images/home.jpg");
+  background-size: cover;
+  aspect-ratio: 16/9;
+  width: 100%;
+  max-width: 900px;
+  background-position: center;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 400px;
 }
 
 .supplier-img {
