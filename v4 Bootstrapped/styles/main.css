@@ -5,6 +5,11 @@ body {
 p {
     margin: 0;
 }
+
+#carouselPortfolio {
+    height: 90vh;
+}
+
 .nav-background {
     background-color: white;
 }
@@ -34,6 +39,18 @@ p {
 
 .supplier-img {
     max-width: 200px;
+}
+
+.contacts {
+    height: 50vh;
+}
+
+.portfolio-page {
+    height: 100vh;
+}
+
+.carousel-img {
+    max-width: 500px;
 }
 
 @media screen and (min-width: 120em) {
