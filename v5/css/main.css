@@ -264,7 +264,7 @@ main {
 }
 
 .hero {
-  background: url("/images/hero-lg.jpg");
+  background: url("../images/hero-lg.jpg");
   background-repeat: no-repeat;
   background-position: 25% 90%;
   background-size: auto;
