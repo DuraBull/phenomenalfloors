@@ -1,20 +1,22 @@
 .brand
     display: flex
     flex-direction: column
-    font-size: 1.5em
+    font-size: 1.3em
     text-shadow: 1px 1px 5px black, 1px 1px 10px $light-gold
     .bold
         color: $gold
         text-shadow: 1px 1px 1px black, 1px 1px 5px black
         font-weight: $font-bold
-    .P
-        color: $gold
-        text-shadow: 1px 1px 1px black, 1px 1px 5px black
+    // .P
+    //     color: $gold
+    //     text-shadow: 1px 1px 1px black, 1px 1px 5px black
     .F
         color: black
+.brand-name
+    scroll-behavior: smooth
 
 .brand-underline
-    width: 300px
+    width: 12em
     height: 2px
     background: linear-gradient(to right, $gold, black, white)
 
@@ -26,10 +28,15 @@
 .nav-item
     @include font($font-rale, $font-normal)
     &:not(:last-of-type)
-        padding-right: 1em
+        margin-right: 1em
     &:hover
-        text-shadow: 0 0 20px $dark-blue
-        text-decoration: underline
+        border-bottom: 2px solid $dark-blue
 
 .active
     font-weight: $font-bold
+
+.disabled
+    color: lighten(black, 80%)
+    &:hover
+        cursor: default
+        border: none
