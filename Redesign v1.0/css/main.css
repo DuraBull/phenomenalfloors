@@ -298,6 +298,7 @@ nav {
 footer {
   background-color: rgb(38, 38, 38);
   font-size: 0.8rem;
+  padding: 0.5rem 0;
 }
 
 .brand-footer {
