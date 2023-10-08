@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: montserrat;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -187,4 +188,129 @@ table {
 
 td, th {
   padding: 0;
+}
+
+html {
+  font-size: 14px;
+  background: #4c4b4f;
+  color: #FFFFFF;
+}
+
+p {
+  position: relative;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 0.4em 0;
+}
+
+h1 {
+  font-size: 1.15rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1.1em;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background: rgb(38, 38, 38);
+  height: 50px;
+  width: 100%;
+  padding: 0 1.5em;
+}
+
+.brand-name {
+  display: flex;
+  flex-direction: row;
+}
+.brand-name h3 {
+  font-size: 1rem;
+}
+
+.brand-primary {
+  color: #e0b13c;
+  font-style: italic;
+}
+
+.brand-secondary {
+  font-weight: 300;
+}
+
+nav {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 2em;
+  justify-content: center;
+  height: 500px;
+  background-image: url("../images/hero-resize-compressed.webp");
+  background-repeat: no-repeat;
+  background-position: 70% 0;
+  border-bottom: 2px solid rgb(38, 38, 38);
+}
+
+.content {
+  text-align: center;
+}
+
+.content-container {
+  padding: 0em 0.75em 1.8em;
+}
+
+.img-overlay {
+  background-color: rgba(38, 38, 38, 0.8);
+}
+
+.img-bg {
+  position: relative;
+  background-image: url("../images/Resized_20220427_120323.jpg");
+  background-position: 40% 0;
+}
+
+.first {
+  padding-top: 1.8em;
+}
+
+.main-heading {
+  font-weight: 400;
+  margin: 1.6em 1em 0;
+  text-align: center;
+}
+
+.heading {
+  background: rgb(38, 38, 38);
+}
+
+.btn {
+  height: 50px;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1.8em 0 1.4em;
+}
+
+.line {
+  background: #e0b13c;
+  width: 40%;
+  height: 1px;
+}
+
+.diamond {
+  background: #e0b13c;
+  width: 18px;
+  height: 18px;
+  margin: 0 0.5em;
+  rotate: 45deg;
 }/*# sourceMappingURL=main.css.map */
