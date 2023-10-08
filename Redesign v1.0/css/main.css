@@ -272,7 +272,9 @@ nav {
 .img-bg {
   position: relative;
   background-image: url("../images/Resized_20220427_120323.jpg");
-  background-position: 40% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
 }
 
 .first {
@@ -313,4 +315,21 @@ nav {
   height: 18px;
   margin: 0 0.5em;
   rotate: 45deg;
+}
+
+.home-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img-tile {
+  background: rgb(38, 38, 38);
+  width: 11em;
+  height: 11em;
+  margin: 0.5em;
+}
+.img-tile img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */
