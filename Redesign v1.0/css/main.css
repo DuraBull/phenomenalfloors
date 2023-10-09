@@ -215,6 +215,7 @@ h2 {
 
 header {
   position: fixed;
+  margin-top: -3rem;
   z-index: 5;
   display: flex;
   align-items: center;
@@ -254,9 +255,11 @@ nav {
 
 .brand-secondary {
   font-weight: 300;
+  text-shadow: 0px 0px 25px #E0B13C;
 }
 
 .hero {
+  margin-top: 3em;
   display: flex;
   flex-direction: row;
   align-content: flex-end;
