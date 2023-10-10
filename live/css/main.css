@@ -423,7 +423,7 @@ header {
 
 .content-container {
   position: relative;
-  padding: 0em clamp(0.75em, 7em, 3vw);
+  padding: 0em clamp(0em, 7em, 3vw);
   margin: auto;
 }
 
