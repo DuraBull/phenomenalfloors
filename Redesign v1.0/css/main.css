@@ -431,7 +431,7 @@ header {
 
 .content-block {
   padding: 1em 0.2em;
-  box-shadow: 0 2px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
   margin: auto;
 }
 
@@ -473,9 +473,16 @@ header {
   position: relative;
   max-width: 2500px;
   width: 100%;
+  min-height: 50px;
   z-index: 3;
   background: #403F43;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sticky {
+  position: sticky;
+  top: 50px;
+  left: 0;
 }
 
 footer {
