@@ -208,6 +208,8 @@ p {
 
 h1 {
   font-size: clamp(1.15rem, 2.3rem, 3vw);
+  margin: auto;
+  max-width: 900px;
 }
 
 h2 {
