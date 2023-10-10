@@ -481,6 +481,7 @@ header {
 
 .sticky {
   position: sticky;
+  z-index: 4;
   top: 50px;
   left: 0;
 }
