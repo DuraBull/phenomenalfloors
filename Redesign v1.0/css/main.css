@@ -486,6 +486,12 @@ header {
   left: 0;
 }
 
+.inactive {
+  text-decoration: line-through;
+  text-decoration-color: #e0b13c;
+  text-decoration-thickness: 2px;
+}
+
 footer {
   position: sticky;
   top: 100vh;
