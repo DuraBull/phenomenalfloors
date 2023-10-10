@@ -191,6 +191,8 @@ td, th {
 }
 
 html {
+  display: flex;
+  justify-content: center;
   font-size: 14px;
   background: #4c4b4f;
   color: #FFFFFF;
@@ -198,17 +200,18 @@ html {
 
 p {
   position: relative;
-  font-weight: 600;
-  line-height: 28px;
-  padding: 0.4em 0;
+  font-size: clamp(1rem, 1.43rem, 3vw);
+  font-weight: 400;
+  line-height: clamp(2rem, 2.8rem, 3vw);
+  padding: 0.4em clamp(0em, 10em, 4vw);
 }
 
 h1 {
-  font-size: 1.15rem;
+  font-size: clamp(1.15rem, 2.3rem, 3vw);
 }
 
 h2 {
-  font-size: 1.1rem;
+  font-size: clamp(1.1rem, 1.7rem, 3vw);
   font-weight: 500;
   padding: 1.1em;
 }
@@ -219,6 +222,7 @@ header {
   align-item: space-between;
   justify-content: space-between;
   top: 0;
+  left: 0;
   z-index: 5;
   display: flex;
   align-items: center;
@@ -229,19 +233,32 @@ header {
   box-shadow: 0 2px 1rem #000;
 }
 
+.header-container {
+  display: flex;
+  align-item: space-between;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+}
+
 .brand-name, .brand-title {
   display: flex;
-  width: 12rem;
+  width: 80%;
 }
 .brand-name h3, .brand-title h3 {
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.3rem, 3vw);
 }
 
 .brand-name {
+  justify-content: center;
   flex-direction: column;
 }
 
 .brand-underline {
+  position: relative;
+  z-index: 5;
   width: 100%;
   height: 1px;
   background: linear-gradient(90deg, #E0B13C 0%, #212226 60%);
@@ -249,11 +266,12 @@ header {
 
 .brand-primary {
   color: #e0b13c;
+  font-weight: 400;
   font-style: italic;
 }
 
 .brand-secondary {
-  font-weight: 300;
+  font-weight: 200;
   text-shadow: 0px 0px 25px #E0B13C;
 }
 
@@ -265,7 +283,27 @@ header {
   position: relative;
   width: 50px;
   height: 50px;
-  box-shadow: 1px 0px 3px 0px rgba(224, 177, 60, 0.3);
+}
+
+.ham-bars {
+  position: relative;
+  width: 1.5rem;
+  height: 1px;
+  background: #e0b13c;
+}
+.ham-bars::before, .ham-bars::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background: #e0b13c;
+}
+.ham-bars::before {
+  top: -5px;
+  width: 2rem;
+}
+.ham-bars::after {
+  top: 5px;
+  width: 1rem;
 }
 
 .ham-vertical {
@@ -303,7 +341,7 @@ header {
   top: 0;
   left: 0;
   margin-top: 3rem;
-  background-color: rgb(38, 38, 38);
+  background: rgb(38, 38, 38);
   width: 100%;
   height: 0vh;
   box-shadow: 0 50px 5rem #000;
@@ -352,28 +390,53 @@ header {
   align-items: flex-end;
   padding-bottom: 2em;
   justify-content: center;
-  height: 500px;
-  background-image: url("../images/home/hero-m.webp");
-  background-repeat: no-repeat;
-  background-position: 70% 0;
+  max-width: 2400px;
+  max-height: 495px;
+  height: 100%;
+  border-bottom: 2px solid rgb(38, 38, 38);
+}
+.hero picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 537px;
+  position: -2;
+}
+.hero picture img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-bottom: 2px solid rgb(38, 38, 38);
 }
 
 .content {
   text-align: center;
+  max-width: 2400px;
+  width: 100%;
 }
 
 .content-container {
-  padding: 0em 0.75em 1.8em;
+  position: relative;
+  padding: 0em clamp(0.75em, 7em, 3vw);
+  margin: auto;
 }
 
 .content-block {
   padding: 1em 0.2em;
   box-shadow: 0 2px 1px 0px rgba(0, 0, 0, 0.2);
+  margin: auto;
 }
 
 .img-overlay {
+  position: relative;
   background-color: rgba(38, 38, 38, 0.8);
+  width: 100%;
 }
 
 .img-bg {
@@ -382,6 +445,8 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0;
+  width: 100%;
+  height: 100%;
 }
 
 .first {
@@ -404,6 +469,8 @@ header {
 
 .heading {
   position: relative;
+  max-width: 2500px;
+  width: 100%;
   z-index: 3;
   background: #403F43;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
@@ -412,8 +479,9 @@ header {
 footer {
   position: sticky;
   top: 100vh;
+  width: 100%;
   background-color: rgb(38, 38, 38);
-  font-size: 0.8rem;
+  font-size: clamp(1rem, 1.5rem, 3vw);
   padding: 0.5rem 0;
 }
 
@@ -450,7 +518,8 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 1.8em 0 1.4em;
+  max-width: 500px;
+  margin: 1.8em auto;
 }
 
 .line {
@@ -487,7 +556,7 @@ footer {
 }
 
 .nav-divider {
-  margin: 0;
+  margin: auto;
 }
 .nav-divider .line {
   width: 25%;
@@ -495,4 +564,31 @@ footer {
 .nav-divider .diamond {
   width: 10px;
   height: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .main-nav {
+    position: fixed;
+    top: 0.7em;
+    left: 30%;
+    max-width: 500px;
+    z-index: 3;
+    margin: 0;
+    background: rgba(0, 0, 0, 0);
+    box-shadow: none;
+  }
+  .main-nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .hamburger {
+    display: none;
+  }
+  .nav-divider .line {
+    width: 10%;
+  }
+  .nav-divider .diamond {
+    width: 5px;
+    height: 5px;
+  }
 }/*# sourceMappingURL=main.css.map */
