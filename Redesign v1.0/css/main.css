@@ -192,10 +192,15 @@ td, th {
 
 html {
   display: flex;
+  max-width: 2400px;
   justify-content: center;
   font-size: 14px;
   background: #4c4b4f;
   color: #FFFFFF;
+}
+
+body {
+  width: 100%;
 }
 
 p {
@@ -426,13 +431,26 @@ header {
 .content-container {
   position: relative;
   padding: 0em clamp(0em, 7em, 3vw);
+  min-width: 350px;
+  max-width: 2400px;
+  width: 100%;
+  margin: auto;
+}
+
+.content-block, .content-section {
+  min-width: 350px;
+  max-width: 2400px;
+  width: 100%;
   margin: auto;
 }
 
 .content-block {
-  padding: 1em 0.2em;
+  max-width: 850px;
   box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.2);
-  margin: auto;
+}
+
+.content-section {
+  max-width: 1000px;
 }
 
 .img-overlay {
