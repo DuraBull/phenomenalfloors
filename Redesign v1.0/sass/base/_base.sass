@@ -1,26 +1,24 @@
 html
     display: flex
-    max-width: 2400px
+    // max-width: 2400px
     justify-content: center
     font-size: 14px
     background: $secondary
     color: $white
 
-body
-    max-width: 1440px
-
-
 p
     position: relative
-    font-weight: $semi-bold
-    line-height: 28px
-    padding: .4em 0
+    font-size: clamp(1rem, 1.43rem, 3vw)
+    font-weight: $regular
+    line-height: clamp(2rem, 2.8rem, 3vw)
+    padding: .4em clamp(0em, 10em, 4vw)
 
 h1
-    font-size: 1.15rem
+    // font-size: 1.15rem
+    font-size: clamp(1.15rem, 2.3rem, 3vw)
 
 h2
-    font-size: 1.1rem
+    font-size: clamp(1.1rem, 1.7rem, 3vw)
     font-weight: $medium
     padding: 1.1em
     
