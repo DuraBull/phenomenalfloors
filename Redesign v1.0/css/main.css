@@ -192,8 +192,7 @@ td, th {
 }
 
 html {
-  display: flex;
-  max-width: 2400px;
+  max-width: 4000px;
   justify-content: center;
   font-size: 14px;
   background: #4c4b4f;
@@ -201,6 +200,7 @@ html {
 }
 
 body {
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -231,8 +231,6 @@ h2 {
 
 header {
   position: fixed;
-  display: flex;
-  align-item: space-between;
   justify-content: space-between;
   top: 0;
   left: 0;
@@ -396,6 +394,7 @@ header {
 }
 
 .hero {
+  position: relative;
   margin-top: 3em;
   display: flex;
   flex-direction: row;
@@ -404,7 +403,8 @@ header {
   padding-bottom: 2em;
   justify-content: center;
   max-width: 2400px;
-  max-height: 495px;
+  min-height: 495px;
+  max-height: 550px;
   height: 100%;
   border-bottom: 2px solid rgb(38, 38, 38);
 }
@@ -435,16 +435,18 @@ header {
 }
 
 .content-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding: 0em clamp(0em, 7em, 3vw);
-  min-width: 350px;
+  min-width: 320px;
   max-width: 2400px;
   width: 100%;
   margin: auto;
 }
 
 .content-block, .content-section {
-  min-width: 350px;
+  min-width: 320px;
   max-width: 2400px;
   width: 100%;
   margin: auto;
@@ -499,6 +501,7 @@ header {
   justify-content: center;
   position: relative;
   max-width: 2500px;
+  min-width: 320px;
   width: 100%;
   min-height: 50px;
   z-index: 3;
@@ -528,7 +531,6 @@ footer {
   font-size: clamp(1rem, 1.5rem, 3vw);
   padding: 0.5rem 0;
 }
-
 h4 {
   font-weight: 400;
 }
@@ -558,6 +560,20 @@ h4 {
 
 .footer-hours, .footer-time {
   font-weight: 300;
+}
+
+.testimonial-container {
+  margin: 5em auto 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0em clamp(0em, 7em, 3vw);
+  min-width: 320px;
+  max-width: 2400px;
+  width: 100%;
+}
+.testimonial-container .content-block {
+  text-align: left;
 }
 
 .btn {
