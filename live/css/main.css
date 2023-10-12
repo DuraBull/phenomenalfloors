@@ -634,7 +634,9 @@ h4 {
   max-height: 900px;
   transition-duration: 300ms;
 }
-.img-tile img:hover, .img-tile img:focus {
+.img-tile img:active {
+  top: -10%;
+  left: -10%;
   width: 120%;
   height: 120%;
   z-index: 1;
