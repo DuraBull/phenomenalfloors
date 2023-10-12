@@ -634,15 +634,6 @@ h4 {
   max-height: 900px;
   transition-duration: 300ms;
 }
-.img-tile img:active {
-  top: -10%;
-  left: -10%;
-  width: 120%;
-  height: 120%;
-  z-index: 1;
-  box-shadow: 0 0 15px 5px #e0b13c;
-  transition-duration: 300ms;
-}
 
 .active-img {
   position: fixed;
@@ -662,6 +653,19 @@ h4 {
 .nav-divider .diamond {
   width: 10px;
   height: 10px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding: 0 1em;
+  margin: auto;
+  text-align: left;
+  color: #000;
+}
+.contact-container:first-child {
+  margin-top: 5em;
 }
 
 @media screen and (min-width: 700px) {
