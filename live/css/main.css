@@ -476,7 +476,7 @@ header {
   margin: auto;
 }
 .feature-list p {
-  font-size: clamp(0.8rem, 1.43rem, 3vw);
+  font-size: clamp(1rem, 1.43rem, 3vw);
   font-weight: 300;
 }
 
