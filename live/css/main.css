@@ -652,9 +652,6 @@ h4 {
   height: clamp(310px, 900px, 50vw);
   box-shadow: 0 0 clamp(40em, 200em, 50vw) 30em rgba(0, 0, 0, 0.8);
 }
-.active-img:hover {
-  top: 2em;
-}
 
 .nav-divider {
   margin: auto;
