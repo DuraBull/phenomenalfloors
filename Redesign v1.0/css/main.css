@@ -634,15 +634,6 @@ h4 {
   max-height: 900px;
   transition-duration: 300ms;
 }
-.img-tile img:active {
-  top: -10%;
-  left: -10%;
-  width: 120%;
-  height: 120%;
-  z-index: 1;
-  box-shadow: 0 0 15px 5px #e0b13c;
-  transition-duration: 300ms;
-}
 
 .active-img {
   position: fixed;
