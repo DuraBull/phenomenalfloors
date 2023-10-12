@@ -402,7 +402,6 @@ header {
   align-items: flex-end;
   padding-bottom: 2em;
   justify-content: center;
-  max-width: 2400px;
   min-height: 495px;
   max-height: 550px;
   height: 100%;
@@ -430,7 +429,6 @@ header {
 
 .content {
   text-align: center;
-  max-width: 2400px;
   width: 100%;
 }
 
@@ -440,14 +438,13 @@ header {
   position: relative;
   padding: 0em clamp(0em, 7em, 3vw);
   min-width: 320px;
-  max-width: 2400px;
+  max-width: 4000px;
   width: 100%;
   margin: auto;
 }
 
 .content-block, .content-section {
   min-width: 320px;
-  max-width: 2400px;
   width: 100%;
   margin: auto;
 }
@@ -500,7 +497,6 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
-  max-width: 2500px;
   min-width: 320px;
   width: 100%;
   min-height: 50px;
@@ -530,7 +526,9 @@ footer {
   background-color: rgb(38, 38, 38);
   font-size: clamp(1rem, 1.5rem, 3vw);
   padding: 0.5rem 0;
+  margin: auto;
 }
+
 h4 {
   font-weight: 400;
 }
@@ -589,6 +587,9 @@ h4 {
   max-width: 500px;
   margin: 1.8em auto;
 }
+.divider:first-child {
+  margin-top: 6em;
+}
 
 .line {
   background: #e0b13c;
@@ -606,21 +607,51 @@ h4 {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
-.home-images {
+.tile-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 1600px;
+  margin: auto;
 }
 
 .img-tile {
+  position: relative;
   background: #4c4b4f;
-  width: 11em;
-  height: 11em;
+  width: clamp(11em, 25em, 25vw);
+  height: clamp(11em, 25em, 25vw);
   margin: 0.5em;
 }
 .img-tile img {
+  position: absolute;
+  aspect-ratio: 1;
+  z-index: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  max-width: 900px;
+  max-height: 900px;
+  transition-duration: 300ms;
+}
+.img-tile img:hover, .img-tile img:focus {
+  width: 120%;
+  height: 120%;
+  z-index: 1;
+  box-shadow: 0 0 15px 5px #e0b13c;
+  transition-duration: 300ms;
+}
+
+.active-img {
+  position: fixed;
+  top: 1em;
+  z-index: 100;
+  width: clamp(310px, 900px, 50vw);
+  height: clamp(310px, 900px, 50vw);
+  box-shadow: 0 0 clamp(40em, 200em, 50vw) 30em rgba(0, 0, 0, 0.8);
+}
+.active-img:hover {
+  top: 2em;
 }
 
 .nav-divider {
