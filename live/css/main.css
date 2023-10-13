@@ -609,7 +609,9 @@ h4 {
 
 .btn, .call-btn {
   background: rgb(224, 177, 60);
-  color: rgb(255, 255, 255);
+  color: rgb(38, 38, 38);
+  font-weight: 700;
+  text-shadow: 0 0 1px 1px white;
   max-width: 300px;
   max-height: 50px;
   height: 50px;
@@ -617,7 +619,6 @@ h4 {
   width: 100%;
   margin: 0 auto;
 }
-
 .btn:first-child {
   margin-top: 5em;
 }
@@ -719,6 +720,8 @@ h4 {
 }
 .contact-container input[type=submit] {
   background: rgb(224, 177, 60);
+  color: rgb(38, 38, 38);
+  font-weight: 700;
   max-width: 320px;
   max-height: 50px;
   height: 50px;
